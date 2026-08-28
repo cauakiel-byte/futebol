@@ -4,28 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>História do Futebol Brasileiro e do Campeonato Nacional</title>
-    <!-- Vinculação com o arquivo CSS externo -->
+    <!-- CSS Externa -->
     <link rel="stylesheet" href="style.css">
+    <!-- Ícones via Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
     <header>
-        <h1>A História do Futebol Brasileiro</h1>
-        <p>Dos Primeiros Chutes à Era dos Campeonatos Nacionais</p>
+        <div class="header-content">
+            <div class="badge">Projeto Escolar</div>
+            <h1>A História do Futebol Brasileiro</h1>
+            <p>Dos Primeiros Chutes à Era dos Campeonatos Nacionais</p>
+            
+            <!-- Perfil do Autor -->
+            <div class="author-card">
+                <div class="avatar">C</div>
+                <div class="author-info">
+                    <span class="author-label">Escrito por</span>
+                    <span class="author-name">Cauã</span>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
         <div class="intro">
+            <i data-lucide="trophy" class="intro-icon"></i>
             <p>Conheça a cronologia completa do futebol no Brasil: a chegada do esporte, a fundação dos clubes históricos, a criação dos primeiros torneios estaduais e a evolução do Campeonato Brasileiro até os dias de hoje.</p>
         </div>
 
         <!-- SÉCULO XIX -->
         <section>
-            <h2 class="era-title">Século XIX: Os Primeiros Passos (1888 - 1900)</h2>
+            <h2 class="era-title"><i data-lucide="history"></i> Século XIX: Os Primeiros Passos (1888 - 1900)</h2>
             
             <div class="timeline">
                 <div class="timeline-item">
-                    <span class="year-tag">13 de Maio de 1888</span>
+                    <span class="year-tag">13 Mai 1888</span>
                     <div class="timeline-content">O São Paulo Athletic Club (SPAC) é fundado, tornando-se o primeiro clube esportivo do país.</div>
                 </div>
 
@@ -46,7 +61,7 @@
                 </div>
 
                 <div class="timeline-item">
-                    <span class="year-tag">21 de Agosto de 1898</span>
+                    <span class="year-tag">21 Ago 1898</span>
                     <div class="timeline-content">O Club de Regatas Vasco da Gama é fundado no Rio de Janeiro como clube de remo.</div>
                 </div>
 
@@ -61,7 +76,7 @@
                 <div class="timeline-item">
                     <span class="year-tag">1900</span>
                     <div class="timeline-content">
-                        Fundam-se o Sport Club Savoia em Votorantim (1º de jan), o Sport Club Rio Grande (19 de jul) — clube de futebol mais antigo ainda em atividade no país — e a Associação Atlética Ponte Preta em Campinas (11 de ago).
+                        Fundam-se o Sport Club Savoia em Votorantim (1º de Jan), o Sport Club Rio Grande (19 de Jul) — clube de futebol mais antigo ainda em atividade no país — e a Associação Atlética Ponte Preta em Campinas (11 de Ago).
                     </div>
                 </div>
             </div>
@@ -74,7 +89,7 @@
 
         <!-- SÉCULO XX - PARTE 1 -->
         <section>
-            <h2 class="era-title">Século XX: A Expansão e Criação dos Clubes (1901 - 1930)</h2>
+            <h2 class="era-title"><i data-lucide="flag"></i> Século XX: Expansão e Criação dos Clubes (1901 - 1930)</h2>
 
             <div class="timeline">
                 <div class="timeline-item">
@@ -117,7 +132,7 @@
 
         <!-- SÉCULO XX - PARTE 2 -->
         <section>
-            <h2 class="era-title">Século XX: Profissionalização e Era de Ouro (1931 - 1970)</h2>
+            <h2 class="era-title"><i data-lucide="star"></i> Século XX: Profissionalização e Era de Ouro (1931 - 1970)</h2>
 
             <div class="timeline">
                 <div class="timeline-item">
@@ -137,7 +152,7 @@
                 <div class="timeline-item">
                     <span class="year-tag">1951 - 1958</span>
                     <div class="timeline-content">
-                        O Palmeiras (1951) e o Fluminense (1952) conquistar a Copa Rio. Em 1956, Pelé estreia pelo Santos. Em 1958, o Brasil conquista sua **primeira Copa do Mundo** na Suécia.
+                        O Palmeiras (1951) e o Fluminense (1952) conquistam a Copa Rio. Em 1956, Pelé estreia pelo Santos. Em 1958, o Brasil conquista sua **primeira Copa do Mundo** na Suécia.
                     </div>
                 </div>
 
@@ -164,7 +179,7 @@
 
         <!-- SÉCULO XX - PARTE 3 & XXI -->
         <section>
-            <h2 class="era-title">O Campeonato Brasileiro e a Era Moderna (1971 - Presente)</h2>
+            <h2 class="era-title"><i data-lucide="award"></i> O Campeonato Brasileiro e a Era Moderna (1971 - Presente)</h2>
 
             <div class="timeline">
                 <div class="timeline-item">
@@ -203,9 +218,9 @@
                 </div>
 
                 <div class="timeline-item">
-                    <span class="year-tag">2019</span>
+                    <span class="year-tag">2019 - Presente</span>
                     <div class="timeline-content">
-                        O Flamengo vive um ano histórico sob o comando de Jorge Jesus, conquistando a Copa Libertadores da América e o Campeonato Brasileiro em um mesmo final de semana.
+                        O Flamengo vive um ano histórico sob o comando de Jorge Jesus (2019), conquistando Libertadores e Brasileirão. A era recente consolida a hegemonia de clubes como Palmeiras e Flamengo no cenário do continente sul-americano.
                     </div>
                 </div>
             </div>
@@ -216,165 +231,37 @@
             </figure>
         </section>
 
+        <!-- SEÇÃO INTERATIVA E FONTES -->
+        <section class="interaction-section">
+            <div class="card-action">
+                <h3>Gostou deste conteúdo?</h3>
+                <p>Deixe a sua curtida para apoiar o artigo escrito por Cauã!</p>
+                <button id="likeBtn" class="like-button">
+                    <i data-lucide="heart" class="heart-icon"></i>
+                    <span id="likeText">Curtir</span>
+                    <span id="likeCount" class="like-badge">124</span>
+                </button>
+            </div>
+
+            <div class="card-sources">
+                <h3>Fontes e Pesquisas</h3>
+                <p>Confira a pesquisa completa com datas e acervos históricos no Google Search:</p>
+                <a href="https://www.google.com/search?q=historia+do+futebol+brasileiro+e+campeonato+brasileiro" target="_blank" rel="noopener noreferrer" class="source-button">
+                    <i data-lucide="search"></i>
+                    <span>Ver fontes da pesquisa no Google</span>
+                </a>
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <p>Projeto Escolar - A História do Futebol Brasileiro | Desenvolvido para fins educacionais.</p>
+        <p>Projeto Escolar - A História do Futebol Brasileiro | Criado por <strong>Cauã</strong></p>
     </footer>
 
+    <!-- JavaScript Externo -->
+    <script src="script.js"></script>
 </body>
 </html>
-
-CSS
-
-
-:root {
-    --primary: #009b3a;
-    --secondary: #fedf00;
-    --accent: #002776;
-    --bg: #f4f6f8;
-    --card-bg: #ffffff;
-    --text: #222222;
-}
-
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--bg);
-    color: var(--text);
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-
-header {
-    background: linear-gradient(135deg, var(--primary), var(--accent));
-    color: white;
-    text-align: center;
-    padding: 3rem 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-header p {
-    margin-top: 0.5rem;
-    color: var(--secondary);
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-
-main {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 0 1.5rem;
-}
-
-
-.intro {
-    background-color: var(--card-bg);
-    padding: 1.5rem;
-    border-left: 5px solid var(--primary);
-    border-radius: 6px;
-    margin-bottom: 2.5rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-section {
-    margin-bottom: 3rem;
-}
-
-
-h2.era-title {
-    color: var(--accent);
-    border-bottom: 3px solid var(--secondary);
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
-    font-size: 1.8rem;
-}
-
-/* Estrutura da Linha do Tempo (Grid) */
-.timeline {
-    display: grid;
-    gap: 1rem;
-}
-
-
-.timeline-item {
-    background: var(--card-bg);
-    border-radius: 8px;
-    padding: 1rem 1.2rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    transition: transform 0.2s ease;
-}
-
-.timeline-item:hover {
-    transform: translateY(-2px);
-}
-
-
-.year-tag {
-    background-color: var(--primary);
-    color: white;
-    font-weight: bold;
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    white-space: nowrap;
-}
-
-.timeline-content {
-    flex: 1;
-}
-
-
-figure {
-    margin: 2rem 0;
-    text-align: center;
-}
-
-figure img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-figcaption {
-    font-size: 0.85rem;
-    color: #666;
-    margin-top: 0.5rem;
-    font-style: italic;
-}
-
-/* Rodapé */
-footer {
-    background-color: #111;
-    color: #ccc;
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: 3rem;
-    font-size: 0.9rem;
-}
-
-
-@media (max-width: 600px) {
-    .timeline-item {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-}
-
-
 
 
